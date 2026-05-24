@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #1C0F0A;
+    --color-secondary: #4A2015;
+    --color-accent: #C47B2B;
+    --color-primary-light: #F5ECD7;
+    --color-secondary-light: #FDFAF4;
+    --color-text-dark: #1C0F0A;
+    --color-text-muted: #7A5C4A;
+
+    --space-xs: 8px;
+    --space-sm: 18px;
+    --space-md: 32px;
+    --space-lg: 64px;
+    --space-xl: 128px;
+
+    --border-radius: 4px;
+    --transition: 0.3s ease;
+    --max-width: 1200px;
+}
