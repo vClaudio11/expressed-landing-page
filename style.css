@@ -149,9 +149,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--space-xl);
+    padding: var(--space-md);
     max-width: 100%;
-    gap: 10px;
+    gap: 5px;
+}
+
+.hero-inner h1 {
+    font-size: 60px;
 }
 
 .hero-inner p {
@@ -166,7 +170,7 @@ body {
     background-color: var(--color-espresso);
     border-radius: var(--border-radius);
     transition: var(--transition-fast);
-    margin-top: var(--space-xs);
+    margin-top: var(--space-sm);
 }
 
 .hero-inner a:hover {
