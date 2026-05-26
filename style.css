@@ -41,8 +41,13 @@ body {
     color: var(--color-text-dark);
 }
 
+h2 {
+    font-size: clamp(2rem, 8vw, 5rem);
+}
 
-
+h3 {
+    font-size: clamp(1.4rem, 4vw, 3rem);
+}
 
 
 /* Navigation section */
@@ -186,7 +191,7 @@ body {
 
 /* About section */
 #about {
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,10 +208,6 @@ body {
     border-radius: var(--border-radius-sm);
     text-align: center;
     gap: 10px;
-}
-
-.about-inner h2 {
-    font-size: clamp(2rem, 8vw, 5rem)
 }
 
 .about-inner p {
@@ -240,10 +241,6 @@ body {
     max-width: 100%;
 }
 
-.menu-inner h2 {
-    font-size: clamp(2rem, 8vw, 5rem);
-}
-
 .menu-featured {
     display: flex;
     flex-direction: column;
@@ -255,7 +252,7 @@ body {
     margin-bottom: var(--space-sm);
     background-color: var(--color-roast);
     color: var(--color-text-light);
-    padding: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
     border-radius: var(--border-radius-lg);
     transition: transform var(--transition-fast);
 }
@@ -269,13 +266,42 @@ body {
     padding-bottom: var(--space-xl);
 }
 
-.menu-featured h3 {
-    font-size: clamp(1.4rem, 4vw, 3rem);
-}
-
 .menu-featured p {
     font-size: clamp(0.8rem, 3vw, 1.4rem);
 }
+
+
+
+
+
+/* Customer testimonials section */
+#testimonials {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+.testimonials-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--color-cream);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-md);
+}
+
+.testimonials-inner blockquote {
+    font-size: clamp(0.8rem, 3vw, 1.4rem);;
+}
+
 
 
 
@@ -375,6 +401,17 @@ body {
     .card-featured-1 { grid-area : featured-1};
     .card-featured-2 { grid-area : featured-2};
     .card-featured-3 { grid-area : featured-3};
+
+
+    /* adjust testimonials card size */
+    #testimonials {
+        margin-top: var(--space-lg);
+    }
+
+    .testimonials-inner {
+        gap: 60px;
+        padding: var(--space-md) var(--space-lg);
+    }
 }
 
 
