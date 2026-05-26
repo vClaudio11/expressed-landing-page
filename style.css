@@ -192,23 +192,22 @@ h3 {
 
 /* About section */
 #about {
-    min-height: 50vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--space-md);
+    padding: var(--space-md) var(--space-md);
 }
 
 .about-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--color-cream);
-    padding: var(--space-md) var(--space-sm);
     border-radius: var(--border-radius-sm);
     text-align: center;
     gap: 10px;
+    max-width: 600px;
 }
 
 .about-inner p {
@@ -268,7 +267,8 @@ h3 {
 }
 
 .menu-featured p {
-    font-size: clamp(0.8rem, 3vw, 1.4rem);
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    text-align: left;
 }
 
 
