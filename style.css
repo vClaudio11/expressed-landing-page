@@ -206,7 +206,7 @@ h3 {
     justify-content: center;
     border-radius: var(--border-radius-sm);
     text-align: center;
-    gap: 10px;
+    gap: var(--space-sm);
     max-width: 600px;
 }
 
@@ -320,7 +320,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--space-sm) 0;
+    padding: var(--space-md);
     align-items: center;
     background-color: var(--color-cream);
 }
@@ -330,7 +330,11 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--space-lg);
+    margin-top: var(--space-sm);
+    background-color: var(--color-roast);
+    color: var(--color-text-light);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-lg);
 }
 
 .contacts-inner h3 {
@@ -339,14 +343,15 @@ h3 {
 
 .contacts-inner a {
     text-decoration: none;
-    color: var(--color-text-dark);
+    color: var(--color-text-light);
 }
 
 .location-inner {
-    margin-top: var(--space-lg);
+    margin: var(--space-sm) 0;
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 
 .location-inner h3{
@@ -445,6 +450,9 @@ h3 {
     .testimonial {
         padding: var(--space-sm) var(--space-sm);
     }
+
+    
+    /* change contact section spacing */
 }
 
 
@@ -489,7 +497,7 @@ h3 {
     grid-template-areas: 
         "featured featured featured"
         "featured-1 featured-2 featured-3";
-    gap: 50px;
+    gap: var(--space-lg);
     }
 
     .card {
@@ -514,6 +522,35 @@ h3 {
 
     .testimonial {
         padding: var(--space-sm) var(--space-sm);
+    }
+
+
+    /* change flex style of reach out section to row instead of column */
+    .contacts-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-lg);
+        margin-top: var(--space-lg);
+        background-color: var(--color-roast);
+        color: var(--color-text-light);
+        padding: var(--space-md) var(--space-lg);
+        border-radius: var(--border-radius-lg);
+    }
+
+    .contacts-inner h3 {
+    margin-bottom: 0;
+    }
+
+    .location-inner {
+        margin-top: var(--space-lg);
+    }
+
+    .numbers {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
     }
 }
 
