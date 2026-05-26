@@ -18,6 +18,7 @@
     --color-text-dark: #1C0F0A;
     --color-text-muted: #7A5C4A;
     --color-text-light: #FDFAF4;
+    --footer-background-color: #edeaea28;
 
     --space-xs: 8px;
     --space-sm: 16px;
@@ -349,6 +350,42 @@ h3 {
 .location-inner img {
     margin-bottom: var(--space-sm);
 }
+
+
+
+
+
+/* Footer section */
+#footer {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    min-height: 60px;
+    background-color: var(--footer-background-color);
+    padding: var(--space-sm);
+    color: var(--color-text-muted);
+    text-align: center;
+}
+
+.footer-inner {
+    padding-top: var(--space-md);
+}
+
+.footer-navigation {
+    margin-top: var(--space-sm);
+}
+
+/* .footer-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 var(--space-md);
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+} */
+
 
 
 
