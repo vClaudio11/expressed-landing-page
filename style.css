@@ -254,7 +254,8 @@ h3 {
     color: var(--color-text-light);
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--border-radius-lg);
-    transition: transform var(--transition-fast);
+    transition: transform var(--transition-fast); 
+    text-align: left;
 }
 
 .card:hover {
@@ -264,6 +265,7 @@ h3 {
 
 .card-inner {
     padding-bottom: var(--space-xl);
+    padding-top: var(--space-sm);
 }
 
 .menu-featured p {
@@ -292,11 +294,15 @@ h3 {
 
 .testimonials-inner {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background-color: var(--color-cream);
+    gap: 10px;
     border-radius: var(--border-radius-lg);
     padding: var(--space-md);
+}
+
+.testimonial {
+    background-color: var(--color-cream);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-xs) var(--space-sm);
 }
 
 .testimonials-inner blockquote {
@@ -425,6 +431,20 @@ h3 {
     .about-inner {
         border-radius: var(--border-radius-lg);
     }
+
+
+    /* change testimonials sizing */
+    #testimonials {
+        margin-top: var(--space-lg);
+    }
+
+    .testimonials-inner {
+        gap: var(--space-md);
+    }
+
+    .testimonial {
+        padding: var(--space-sm) var(--space-sm);
+    }
 }
 
 
@@ -488,13 +508,12 @@ h3 {
 
 
     /* adjust testimonials card size */
-    #testimonials {
-        margin-top: var(--space-lg);
+    .testimonials-inner {
+        gap: var(--space-md);
     }
 
-    .testimonials-inner {
-        gap: 60px;
-        padding: var(--space-md) var(--space-lg);
+    .testimonial {
+        padding: var(--space-sm) var(--space-sm);
     }
 }
 
