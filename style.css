@@ -270,7 +270,7 @@ body {
 }
 
 .menu-featured h3 {
-    font-size: clamp(1.4rem, 4vw, 2rem);
+    font-size: clamp(1.4rem, 4vw, 3rem);
 }
 
 .menu-featured p {
@@ -367,7 +367,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: var(--space-xl);
+        margin-bottom: var(--space-md);
         gap: 10px;
     }
 
@@ -389,4 +389,19 @@ body {
         padding: var(--nav-height) 80px 120px 80px;
     }
 
+
+    /* Increase featured item card size */
+    .menu-featured {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "featured featured featured"
+            "featured-1 featured-2 featured-3";
+        gap: 70px;
+    }
+
+    .card-inner {
+        padding-bottom: var(--space-xxl);
 }
+}
+
